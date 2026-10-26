@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background-color: #090D16;
+  color: #F1F5F9;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.light body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 4px;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Glassmorphism and Glow utilities */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.glass-card {
+  background: rgba(13, 17, 26, 0.88);
+  border: 1px solid #1E293B;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 225, 255, 0.5);
+  box-shadow: 0 0 22px -4px rgba(0, 163, 255, 0.28);
+  transform: translateY(-1px);
+}
+
+.glow-sky {
+  box-shadow: 0 0 25px -4px rgba(0, 163, 255, 0.32);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(56, 225, 255, 0.35);
+}
+
+/* RepoAI Sky Blue Gradient Tokens */
+.repoai-gradient-text {
+  background: linear-gradient(135deg, #38E1FF 0%, #00A3FF 50%, #0066FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.repoai-gradient-bg {
+  background: linear-gradient(135deg, #38E1FF 0%, #00A3FF 50%, #0066FF 100%);
+}
+
+.repoai-gradient-border {
+  border: 1px solid transparent;
+  background-image: linear-gradient(rgba(13, 17, 26, 0.95), rgba(13, 17, 26, 0.95)), linear-gradient(135deg, #38E1FF 0%, #00A3FF 50%, #0066FF 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.terminal-bg {
+  background: #0B0F19;
+  border: 1px solid #1E293B;
+}
+
+/* Mermaid graph dark mode tweaks */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Print Stylesheet */
+@media print {
+  /* Hide non-printable and interactive components */
+  aside,
+  header button,
+  nav,
+  #bottom-input-bar,
+  #cookie-banner,
+  #back-to-top,
+  #floating-contact,
+  #scroll-progress-bar,
+  .print\\:hidden,
+  [role="dialog"] {
+    display: none !important;
+  }
+
+  body,
+  html,
+  #root,
+  main {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  pre,
+  code {
+    background: #F1F5F9 !important;
+    color: #0F172A !important;
+    border: 1px solid #CBD5E1 !important;
+    font-size: 9.5pt !important;
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+  }
+
+  .print-page-break {
+    page-break-before: always;
+  }
+
+  .print-avoid-break {
+    page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #4338CA !important;
+  }
+
+  /* Show full text content without truncating */
+  .truncate,
+  .line-clamp-2,
+  .line-clamp-3 {
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+    display: block !important;
+  }
+}

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="100%" stop-color="#0D111A" />
+    </linearGradient>
+
+    <!-- Sky Blue / Electric Cyan Gradient for RepoAI Logo -->
+    <linearGradient id="repoAiSkyOg" x1="0" y1="0" x2="200" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38E1FF" />
+      <stop offset="50%" stop-color="#00A3FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+
+    <linearGradient id="repoAiBackOg" x1="0" y1="0" x2="120" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+
+    <radialGradient id="sparkleAuraOg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#38E1FF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00A3FF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111622" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Outer Framed Border -->
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="2" />
+
+  <!-- Subtle Technical Grid -->
+  <g stroke="#162032" stroke-width="1" opacity="0.6">
+    <line x1="40" y1="140" x2="1160" y2="140" />
+    <line x1="40" y1="280" x2="1160" y2="280" />
+    <line x1="40" y1="420" x2="1160" y2="420" />
+    <line x1="320" y1="40" x2="320" y2="590" />
+    <line x1="640" y1="40" x2="640" y2="590" />
+    <line x1="960" y1="40" x2="960" y2="590" />
+  </g>
+
+  <!-- Sky Blue Radial Aura Behind Logo -->
+  <circle cx="160" cy="120" r="140" fill="#00A3FF" opacity="0.12" filter="blur(40px)" />
+
+  <!-- Flagship Folder & Arrow Logo (Scale 1.1) -->
+  <g transform="translate(80, 75) scale(0.9)">
+    <!-- Back Tab -->
+    <path d="M 14 26 C 14 20 18 16 24 16 L 54 16 C 60 16 65 20 68 26 L 73 34 L 14 34 Z" fill="url(#repoAiBackOg)" />
+    <!-- Back Body -->
+    <rect x="14" y="28" width="92" height="68" rx="10" fill="url(#repoAiBackOg)" opacity="0.9" />
+    <!-- Front Face + Arrow -->
+    <path
+      d="M 16 44 C 16 38 20 34 26 34 L 88 34 C 94 34 99 38 101 44 L 108 52 L 108 40 L 152 64 L 108 88 L 108 76 L 100 84 C 96 91 90 96 82 96 L 26 96 C 20 96 16 92 16 86 Z"
+      fill="url(#repoAiSkyOg)"
+      stroke="#FFFFFF"
+      stroke-opacity="0.3"
+      stroke-width="2"
+    />
+    <!-- Code symbol: </ > -->
+    <g stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 44 54 L 33 65 L 44 76" />
+      <path d="M 52 77 L 62 53" />
+      <path d="M 70 54 L 81 65 L 70 76" />
+    </g>
+    <!-- Arrow Head Accent -->
+    <path d="M 108 42 L 150 64 L 108 86 Z" fill="#38E1FF" opacity="0.9" />
+    <!-- Sparkle Star on Top Right -->
+    <circle cx="106" cy="20" r="18" fill="url(#sparkleAuraOg)" />
+    <path d="M 106 4 C 106 18 106 18 92 20 C 106 22 106 22 106 36 C 106 22 106 22 120 20 C 106 18 106 18 106 4 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Wordmark: Repo (White) + AI (Sky Blue Gradient) -->
+  <g transform="translate(235, 142)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="54" font-weight="900" letter-spacing="-1">
+      <tspan fill="#FFFFFF">Repo</tspan>
+      <tspan fill="url(#repoAiSkyOg)">AI</tspan>
+    </text>
+  </g>
+
+  <!-- Production Live Badge -->
+  <g transform="translate(470, 105)">
+    <rect width="210" height="36" rx="8" fill="#0C1929" stroke="#0284C7" stroke-width="1.5" />
+    <circle cx="20" cy="18" r="4.5" fill="#38E1FF" />
+    <text x="34" y="23" fill="#38E1FF" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="1">
+      REPOAI.DEV • LIVE
+    </text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="80" y="245" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-1">
+    Repository Architecture &amp; Setup Inspector
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="300" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="normal">
+    Deterministic local setup runbooks, verified CI test workflows, and 1-word keyword ecosystem URL routing.
+  </text>
+
+  <!-- 3 Feature Highlight Cards with Sky Blue Accents -->
+  <g transform="translate(80, 360)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="320" height="155" rx="14" fill="#090D14" stroke="#1E293B" stroke-width="1.5" />
+    <rect x="0" y="0" width="320" height="4" rx="2" fill="url(#repoAiSkyOg)" />
+    <text x="24" y="42" fill="#38E1FF" font-family="monospace" font-size="13" font-weight="bold">01. BLUEPRINT</text>
+    <text x="24" y="78" fill="#FFFFFF" font-family="sans-serif" font-size="19" font-weight="bold">Mermaid Architecture</text>
+    <text x="24" y="110" fill="#94A3B8" font-family="sans-serif" font-size="13">Interactive visual tree &amp; system mapping</text>
+
+    <!-- Card 2 -->
+    <rect x="350" y="0" width="320" height="155" rx="14" fill="#090D14" stroke="#1E293B" stroke-width="1.5" />
+    <rect x="350" y="0" width="320" height="4" rx="2" fill="url(#repoAiSkyOg)" />
+    <text x="374" y="42" fill="#38E1FF" font-family="monospace" font-size="13" font-weight="bold">02. RUNBOOKS</text>
+    <text x="374" y="78" fill="#FFFFFF" font-family="sans-serif" font-size="19" font-weight="bold">Verified Setup Steps</text>
+    <text x="374" y="110" fill="#94A3B8" font-family="sans-serif" font-size="13">Extracted from configs &amp; CI workflows</text>
+
+    <!-- Card 3 -->
+    <rect x="700" y="0" width="340" height="155" rx="14" fill="#090D14" stroke="#1E293B" stroke-width="1.5" />
+    <rect x="700" y="0" width="340" height="4" rx="2" fill="url(#repoAiSkyOg)" />
+    <text x="724" y="42" fill="#38E1FF" font-family="monospace" font-size="13" font-weight="bold">03. ECOSYSTEM</text>
+    <text x="724" y="78" fill="#FFFFFF" font-family="sans-serif" font-size="19" font-weight="bold">13-Tool URL Swaps</text>
+    <text x="724" y="110" fill="#94A3B8" font-family="sans-serif" font-size="13">gitdiagram, gitingest, github1s &amp; more</text>
+  </g>
+</svg>

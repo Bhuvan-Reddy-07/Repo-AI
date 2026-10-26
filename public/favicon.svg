@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Sky Blue to Electric Cyan Gradient -->
+    <linearGradient id="favSkyGrad" x1="4" y1="12" x2="60" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38E1FF" />
+      <stop offset="50%" stop-color="#00A3FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+    <linearGradient id="favBackGrad" x1="6" y1="8" x2="44" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <radialGradient id="favStarAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#38E1FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00A3FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Dark Rounded Container -->
+  <rect width="64" height="64" rx="14" fill="#0B0F17" />
+  <rect x="0.5" y="0.5" width="63" height="63" rx="13.5" stroke="#1E293B" stroke-opacity="0.8" />
+
+  <!-- Folder Back Tab -->
+  <path d="M 10 16 C 10 13 12 11 15 11 L 28 11 C 31 11 33 13 34 16 L 36 20 L 10 20 Z" fill="url(#favBackGrad)" />
+  <rect x="10" y="18" width="34" height="30" rx="5" fill="url(#favBackGrad)" opacity="0.9" />
+
+  <!-- Front Folder Body with Extending Arrow -->
+  <path
+    d="M 10 24 C 10 20.5 13 18 16.5 18 L 38 18 C 41 18 43 20 44 23 L 44 20 L 58 32 L 44 44 L 44 41 C 42 45 38 48 34 48 L 16.5 48 C 13 48 10 45 10 41.5 Z"
+    fill="url(#favSkyGrad)"
+    stroke="#FFFFFF"
+    stroke-opacity="0.3"
+    stroke-width="1"
+  />
+
+  <!-- Code symbol: </ > -->
+  <path d="M 20 28 L 16 32 L 20 36" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 24 38 L 28 26" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 32 28 L 36 32 L 32 36" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Sparkle Star on Top Right of Folder -->
+  <circle cx="44" cy="12" r="7" fill="url(#favStarAura)" />
+  <path d="M 44 5 C 44 11 44 11 38 12 C 44 13 44 13 44 19 C 44 13 44 13 50 12 C 44 11 44 11 44 5 Z" fill="#FFFFFF" />
+  <circle cx="44" cy="12" r="1.5" fill="#FFFFFF" />
+</svg>
