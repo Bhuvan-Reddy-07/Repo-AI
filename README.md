@@ -1,6 +1,10 @@
-# RepoPilot // Open-Source Onboarding Engine & Ecosystem Command Center
+# RepoAI // Open-Source Architecture & Setup Inspector
 
-> **Repo-AI: The 60-Second Open-Source Onboarding Assistant**  
+[![Deploy RepoAI to GitHub Pages](https://github.com/Bhuvan-Reddy-07/Repo-AI/actions/workflows/deploy.yml/badge.svg)](https://github.com/Bhuvan-Reddy-07/Repo-AI/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-2ea44f?style=flat&logo=github)](https://bhuvan-reddy-07.github.io/Repo-AI/)
+
+> **Live Website:** [https://bhuvan-reddy-07.github.io/Repo-AI/](https://bhuvan-reddy-07.github.io/Repo-AI/)  
+> **Repo-AI: The 60-Second Open-Source Onboarding Assistant powered by Gemma 4 MoE**  
 > Built for hackathons, open-source maintainers, and first-time contributors.
 
 ---
